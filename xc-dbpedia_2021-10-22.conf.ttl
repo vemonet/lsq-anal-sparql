@@ -1,0 +1,32 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix lsqo: <http://lsq.aksw.org/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix lsqr: <http://lsq.aksw.org/> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+
+lsqr:xc-dbpedia_2021-10-22
+        dct:identifier                  "xc-dbpedia_2021-10-22" ;
+        lsqo:executionTimeoutForRetrieval  "300"^^xsd:decimal ;
+        lsqo:connectionTimeoutForRetrieval  "60"^^xsd:decimal ;
+        lsqo:maxResultCountForRetrieval  "1000000"^^xsd:long ;
+        lsqo:maxByteSizeForRetrieval    "-1"^^xsd:long ;
+        lsqo:maxResultCountForSerialization  "-1"^^xsd:long ;
+        lsqo:maxByteSizeForSerialization  "1000000"^^xsd:long ;
+        lsqo:executionTimeoutForCounting  "300"^^xsd:decimal ;
+        lsqo:connectionTimeoutForCounting  "60"^^xsd:decimal ;
+        lsqo:maxCount                   "1000000000"^^xsd:long ;
+        lsqo:maxCountAffectsTp          false ;
+        lsqo:userAgent                  "Linked SPARQL Queries (LSQ) Client" ;
+        lsqo:benchmarkSecondaryQueries  true ;
+        lsqo:datasetSize                "1103759532"^^xsd:long ;
+        lsqo:datasetLabel               "dbpedia" ;
+        lsqo:baseIri                    lsqr: ;
+        lsqo:endpoint                   lsqr:dataRefSparqlEndpoint-p8NZExllYg_Csl6ILD1SPDJxicNlozxH2Jcq99n9xNA .
+
+lsqr:dataRefSparqlEndpoint-p8NZExllYg_Csl6ILD1SPDJxicNlozxH2Jcq99n9xNA
+        rdf:type  <http://w3id.org/rpif/vocab#DataRefSparqlEndpoint> ;
+        <http://w3id.org/rpif/vocab#serviceUrl>  <http://dbpedia.org/sparql> ;
+        <http://w3id.org/rpif/vocab#namedGraph>  rdf:nil ;
+        <http://w3id.org/rpif/vocab#defaultGraph>  rdf:nil .
